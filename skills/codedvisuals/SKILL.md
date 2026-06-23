@@ -143,6 +143,10 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/avatars-stack` (**Stack**): An overlapping avatar stack with a remaining count badge. Details: `visuals/avatars/stack.md`.
 - `@codedvisuals/avatars-profile-card` (**Profile Card**): A compact profile card with avatar, name, and key stats. Details: `visuals/avatars/profile-card.md`.
 
+### Branding
+
+- `@codedvisuals/branding-spotlight` (**Spotlight**): An app icon spotlit over a fading dock of placeholder apps, with ambient glow and a particle field. Details: `visuals/branding/spotlight.md`.
+
 ### Browser
 
 - `@codedvisuals/browser-loading` (**Loading**): A browser window mockup with an animated page loading state. Details: `visuals/browser/loading.md`.
