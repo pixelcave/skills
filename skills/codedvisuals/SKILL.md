@@ -212,6 +212,11 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/files-stacked` (**Stacked**): A stack of overlapping file cards with depth. Details: `visuals/files/stacked.md`.
 - `@codedvisuals/files-upload` (**Upload**): A file upload area with progress and drag and drop. Details: `visuals/files/upload.md`.
 
+### Geo
+
+- `@codedvisuals/geo-globe` (**Globe**): A rotating globe of dotted continents with location markers and connection arcs that draw in. Details: `visuals/geo/globe.md`.
+- `@codedvisuals/geo-pin-drop` (**Pin Drop**): Location pins dropping onto an abstract radar field with concentric ripple pings. Details: `visuals/geo/pin-drop.md`.
+
 ### Images
 
 - `@codedvisuals/images-carousel` (**Carousel**): An image carousel with slides and navigation controls. Details: `visuals/images/carousel.md`.
