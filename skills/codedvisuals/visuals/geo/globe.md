@@ -30,6 +30,7 @@ Also supports the shared animation props (`animated`, `trigger`, `hover`) and pr
 | `arcs` | `boolean` | `true` |
 | `arcPairs` | `[number, number][]` | - |
 | `arcDrawIn` | `boolean` | `true` |
+| `arcPulse` | `"dot" \| "spike"` | `"spike"` |
 | `half` | `boolean` | `false` |
 | `tilt` | `GlobeTilt` | `"top"` |
 | `startAt` | `GlobeStart` | `"atlantic"` |
@@ -42,6 +43,7 @@ Also supports the shared animation props (`animated`, `trigger`, `hover`) and pr
 interface Marker {
   lat: number;
   lng: number;
+  label?: string;
 }
 
 type GlobeTilt = "top" | "equator" | "bottom" | number;
@@ -74,12 +76,15 @@ const CONFIG = {
   arcSamples: 54,
   arcDotSpeed: 0.00016,
   arcTravel: 0.5,
+  arcSpikeLength: 0.2,
+  arcSpikeSamples: 14,
   arcClipDepth: 0,
   pulseSpeed: 0.0038,
   activityEase: 220,
   arcDrawDuration: 850,
   arcStagger: 200,
   markerLimbBand: 0.2,
+  labelLimbBand: 0.55,
   frameStep: 1,
 } as const;
 ```
@@ -106,21 +111,26 @@ import GeoGlobe from "@/components/codedvisuals/geo/globe";
 // reverse spin
 <GeoGlobe spinSpeed={12} />
 
-// half
+// half · labels
 <GeoGlobe
   half
   arcs={false}
-  spinSpeed={3}
-  wrapperClassName="max-w-120"
+  spinSpeed={-6}
+  wrapperClassName="max-w-full"
+  markers={[
+    { lat: 37.77, lng: -122.42, label: "San Francisco" },
+    { lat: 40.71, lng: -74.0, label: "New York" },
+    { lat: 51.51, lng: -0.13, label: "London" },
+    { lat: 1.35, lng: 103.82, label: "Singapore" },
+    { lat: 35.68, lng: 139.69, label: "Tokyo" },
+  ]}
 />
 
-// start: americas
-<GeoGlobe startAt="americas" />
-
-// custom markers with arc pairs
+// start: americas · arc pairs
 <GeoGlobe
+  startAt="americas"
   markers={[
-    { lat: 40.71, lng: -74.0 },
+    { lat: 40.71, lng: -74.0, label: "New York" },
     { lat: 51.51, lng: -0.13 },
     { lat: 35.68, lng: 139.69 },
     { lat: -33.87, lng: 151.21 },
@@ -129,6 +139,18 @@ import GeoGlobe from "@/components/codedvisuals/geo/globe";
     [0, 1],
     [0, 2],
     [0, 3],
+  ]}
+/>
+
+// dot pulse
+<GeoGlobe
+  arcPulse="dot"
+  markers={[
+    { lat: 37.77, lng: -122.42 },
+    { lat: 40.71, lng: -74.0 },
+    { lat: 51.51, lng: -0.13 },
+    { lat: 1.35, lng: 103.82 },
+    { lat: 35.68, lng: 139.69 },
   ]}
 />
 ```

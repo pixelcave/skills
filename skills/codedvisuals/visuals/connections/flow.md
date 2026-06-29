@@ -29,6 +29,7 @@ Also supports the shared animation props (`animated`, `trigger`, `hover`) and pr
 | `sources` | `React.ReactNode[]` | see Default content below |
 | `transforms` | `React.ReactNode[]` | see Default content below |
 | `destinations` | `React.ReactNode[]` | see Default content below |
+| `pulse` | `"dot" \| "spike"` | `"dot"` |
 
 ## Default content
 
@@ -65,4 +66,7 @@ import ConnectionsFlow from "@/components/codedvisuals/connections/flow";
 
 // hover
 <ConnectionsFlow hover />
+
+// spike
+<ConnectionsFlow pulse="spike" />
 ```

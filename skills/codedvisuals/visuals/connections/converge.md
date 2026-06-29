@@ -27,6 +27,7 @@ Also supports the shared animation props (`animated`, `trigger`, `hover`) and pr
 | Prop | Type | Default |
 | --- | --- | --- |
 | `nodes` | `React.ReactNode[]` | see Default content below |
+| `pulse` | `"dot" \| "spike"` | `"dot"` |
 
 ## Default content
 
@@ -52,4 +53,7 @@ import ConnectionsConverge from "@/components/codedvisuals/connections/converge"
 
 // hover
 <ConnectionsConverge hover />
+
+// spike
+<ConnectionsConverge pulse="spike" />
 ```

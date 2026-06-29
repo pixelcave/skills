@@ -29,6 +29,7 @@ Also supports the shared animation props (`animated`, `trigger`, `hover`) and pr
 | `logo` | `React.ReactNode \| null` | see Default content below |
 | `inputs` | `React.ReactNode[]` | see Default content below |
 | `outputs` | `React.ReactNode[]` | see Default content below |
+| `pulse` | `"dot" \| "spike"` | `"dot"` |
 
 ## Default content
 
@@ -64,4 +65,7 @@ import ConnectionsPipeline from "@/components/codedvisuals/connections/pipeline"
 
 // hover
 <ConnectionsPipeline hover />
+
+// spike
+<ConnectionsPipeline pulse="spike" />
 ```

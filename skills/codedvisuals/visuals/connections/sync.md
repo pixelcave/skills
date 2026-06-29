@@ -27,6 +27,7 @@ Also supports the shared animation props (`animated`, `trigger`, `hover`) and pr
 | Prop | Type | Default |
 | --- | --- | --- |
 | `pairs` | `Pair[]` | see Default content below |
+| `pulse` | `"dot" \| "spike"` | `"dot"` |
 
 ## Types
 
@@ -67,4 +68,7 @@ import ConnectionsSync from "@/components/codedvisuals/connections/sync";
 
 // hover
 <ConnectionsSync hover />
+
+// spike
+<ConnectionsSync pulse="spike" />
 ```

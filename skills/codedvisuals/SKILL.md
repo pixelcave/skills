@@ -70,7 +70,7 @@ Visuals expect four things from the host project: the `clsx` + `tailwind-merge` 
 
 ## Use it on a page
 
-A visual fills its parent, so wrap it in a box with a height:
+A visual brings its own height, so it always renders, but it looks best inside a box that gives it room: set an exact height or a `min-h-*`. `h-96` is a good default for most cases. Without a defined height the visual sits edge to edge, top and bottom, with no room to breathe.
 
 ```tsx
 import ChartsLine from "@/components/codedvisuals/charts/line";
@@ -84,7 +84,30 @@ export default function LandingPage() {
 }
 ```
 
+Keep the container padding-free. Each visual already clips its own content, so it fills the frame to the rounded corners and tucks its edges out of sight when space is tight; padding would shrink it and leave gaps.
+
+Alternatively, for a more subtle visual container, you can use the following classes:
+
+```tsx
+<div className="h-96 rounded-2xl border border-border/50 bg-muted/20 dark:bg-muted/15">
+  <ChartsLine animated />
+</div>
+```
+
+For a soft vignette, pass mask utilities straight to the visual:
+
+```tsx
+<div className="h-96 rounded-2xl border bg-card">
+  <ChartsLine
+    animated
+    className="mask-t-from-85% mask-r-from-85% mask-b-from-85% mask-l-from-85%"
+  />
+</div>
+```
+
 The default import name is the consumer's choice; `{Category}{File}` in PascalCase (for example `ChartsLine`) is a safe convention.
+
+If the host project already has its own grid, card, or feature-section layouts, drop the visual into those. If it does not, open `layout-patterns.md` in this skill for ready-to-paste containers, feature cards, bento grids, and split rows. Note that without an existing layout it's a good approach to give the container an explicit height or minimum height to give vertical room for the visual to breathe.
 
 ## Animation
 
@@ -256,6 +279,8 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 ### Sections
 
+- `@codedvisuals/sections-auth` (**Auth**): A login section with social buttons, fields, and a sign-in button. Details: `visuals/sections/auth.md`.
+- `@codedvisuals/sections-bento` (**Bento**): A bento grid section with a featured tile and mixed-size cards. Details: `visuals/sections/bento.md`.
 - `@codedvisuals/sections-blog` (**Blog**): A blog index section with article cards and metadata. Details: `visuals/sections/blog.md`.
 - `@codedvisuals/sections-blog-post` (**Blog Post**): A blog post layout with title, meta, and content. Details: `visuals/sections/blog-post.md`.
 - `@codedvisuals/sections-comments` (**Comments**): A comments thread with avatars, replies, and votes. Details: `visuals/sections/comments.md`.
