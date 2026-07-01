@@ -160,6 +160,11 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/activity-feed` (**Feed**): A live activity feed with avatars, actions, and relative timestamps. Details: `visuals/activity/feed.md`.
 - `@codedvisuals/activity-timeline` (**Timeline**): A vertical activity timeline of grouped events and status changes. Details: `visuals/activity/timeline.md`.
 
+### AI
+
+- `@codedvisuals/ai-agent-flow` (**Agent Flow**): An agent pipeline of stacked isometric cubes that light up in sequence, revealing each step label as it runs. Details: `visuals/ai/agent-flow.md`.
+- `@codedvisuals/ai-prompt-box` (**Prompt Box**): A wide prompt composer with a typing prompt, model picker, token count, and send, over an ambient glow and particle field. Details: `visuals/ai/prompt-box.md`.
+
 ### Avatars
 
 - `@codedvisuals/avatars-grid` (**Grid**): A grid of user avatars with subtle staggered reveals. Details: `visuals/avatars/grid.md`.
