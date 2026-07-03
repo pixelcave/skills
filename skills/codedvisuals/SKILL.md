@@ -163,6 +163,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### AI
 
 - `@codedvisuals/ai-agent-flow` (**Agent Flow**): An agent pipeline of stacked isometric cubes that light up in sequence, revealing each step label as it runs. Details: `visuals/ai/agent-flow.md`.
+- `@codedvisuals/ai-presence` (**Presence**): Live multiplayer cursors roaming a shared canvas, one carrying your avatar and the rest labeled AI agents, over an ambient glow and particle field. Details: `visuals/ai/presence.md`.
 - `@codedvisuals/ai-prompt-box` (**Prompt Box**): A wide prompt composer with a typing prompt, model picker, token count, and send, over an ambient glow and particle field. Details: `visuals/ai/prompt-box.md`.
 
 ### Avatars
