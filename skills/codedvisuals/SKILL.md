@@ -165,6 +165,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/ai-agent-flow` (**Agent Flow**): An agent pipeline of stacked isometric cubes that light up in sequence, revealing each step label as it runs. Details: `visuals/ai/agent-flow.md`.
 - `@codedvisuals/ai-presence` (**Presence**): Live multiplayer cursors roaming a shared canvas, one carrying your avatar and the rest labeled AI agents, over an ambient glow and particle field. Details: `visuals/ai/presence.md`.
 - `@codedvisuals/ai-prompt-box` (**Prompt Box**): A wide prompt composer with a typing prompt, model picker, token count, and send, over an ambient glow and particle field. Details: `visuals/ai/prompt-box.md`.
+- `@codedvisuals/ai-voice` (**Voice**): A realtime voice assistant orb that cycles through listening, thinking, and speaking states, with pulsing rings, a live equalizer, a status pill, and a transcript, over an ambient glow and particle field. Details: `visuals/ai/voice.md`.
 
 ### Avatars
 
@@ -282,6 +283,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 - `@codedvisuals/payments-checkout` (**Checkout**): A checkout summary with line items and a pay button. Details: `visuals/payments/checkout.md`.
 - `@codedvisuals/payments-credit-card` (**Credit Card**): A credit card visual with brand, number, and chip. Details: `visuals/payments/credit-card.md`.
+- `@codedvisuals/payments-usage-meter` (**Usage Meter**): A metered billing summary with a usage bar against quota, itemized metered charges, and an estimated total. Details: `visuals/payments/usage-meter.md`.
 
 ### Sections
 
