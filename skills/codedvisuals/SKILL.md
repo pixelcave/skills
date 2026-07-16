@@ -165,7 +165,14 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/ai-agent-flow` (**Agent Flow**): An agent pipeline of stacked isometric cubes that light up in sequence, revealing each step label as it runs. Details: `visuals/ai/agent-flow.md`.
 - `@codedvisuals/ai-presence` (**Presence**): Live multiplayer cursors roaming a shared canvas, one carrying your avatar and the rest labeled AI agents, over an ambient glow and particle field. Details: `visuals/ai/presence.md`.
 - `@codedvisuals/ai-prompt-box` (**Prompt Box**): A wide prompt composer with a typing prompt, model picker, token count, and send, over an ambient glow and particle field. Details: `visuals/ai/prompt-box.md`.
+- `@codedvisuals/ai-retrieval` (**Retrieval**): A query fanning out to ranked source cards that light up as each pulse lands, then converging into a streamed answer, over an ambient glow and particle field. Details: `visuals/ai/retrieval.md`.
 - `@codedvisuals/ai-voice` (**Voice**): A realtime voice assistant orb that cycles through listening, thinking, and speaking states, with pulsing rings, a live equalizer, a status pill, and a transcript, over an ambient glow and particle field. Details: `visuals/ai/voice.md`.
+
+### API
+
+- `@codedvisuals/api-logs` (**Logs**): Service nodes streaming into a log console along connected paths, with severity-colored level chips and rows that tail in. Details: `visuals/api/logs.md`.
+- `@codedvisuals/api-request` (**Request**): A request arcing from client to server and a response arcing back, with a method pill, a status code, and a JSON response card. Details: `visuals/api/request.md`.
+- `@codedvisuals/api-webhook` (**Webhook**): A webhook event fanning retry arcs at your endpoint, where failed attempts fall short and the successful one delivers. Details: `visuals/api/webhook.md`.
 
 ### Avatars
 
