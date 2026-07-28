@@ -292,6 +292,12 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/payments-credit-card` (**Credit Card**): A credit card visual with brand, number, and chip. Details: `visuals/payments/credit-card.md`.
 - `@codedvisuals/payments-usage-meter` (**Usage Meter**): A metered billing summary with a usage bar against quota, itemized metered charges, and an estimated total. Details: `visuals/payments/usage-meter.md`.
 
+### Search
+
+- `@codedvisuals/search-command-palette` (**Command Palette**): A command palette with a typed query, grouped commands, keyboard hints, and a selection that walks the list. Details: `visuals/search/command-palette.md`.
+- `@codedvisuals/search-results` (**Results**): A search results panel with filter chips, a result count, and matched terms highlighted in place. Details: `visuals/search/results.md`.
+- `@codedvisuals/search-semantic` (**Semantic**): A query landing in an embedding space, where a radius sweep lights up its nearest matches with similarity scores. Details: `visuals/search/semantic.md`.
+
 ### Sections
 
 - `@codedvisuals/sections-auth` (**Auth**): A login section with social buttons, fields, and a sign-in button. Details: `visuals/sections/auth.md`.

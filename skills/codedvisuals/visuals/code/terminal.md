@@ -45,13 +45,7 @@ interface TerminalLine {
 }
 
 type LineKind =
-  | "command"
-  | "output"
-  | "success"
-  | "error"
-  | "warning"
-  | "info"
-  | "muted";
+  "command" | "output" | "success" | "error" | "warning" | "info" | "muted";
 ```
 
 ## Examples
