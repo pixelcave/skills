@@ -166,6 +166,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/ai-presence` (**Presence**): Live multiplayer cursors roaming a shared canvas, one carrying your avatar and the rest labeled AI agents, over an ambient glow and particle field. Details: `visuals/ai/presence.md`.
 - `@codedvisuals/ai-prompt-box` (**Prompt Box**): A wide prompt composer with a typing prompt, model picker, token count, and send, over an ambient glow and particle field. Details: `visuals/ai/prompt-box.md`.
 - `@codedvisuals/ai-retrieval` (**Retrieval**): A query fanning out to ranked source cards that light up as each pulse lands, then converging into a streamed answer, over an ambient glow and particle field. Details: `visuals/ai/retrieval.md`.
+- `@codedvisuals/ai-tools` (**Tools**): An agent working through its tool calls one at a time, each row running with a spinner then settling into a result and a duration. Details: `visuals/ai/tools.md`.
 - `@codedvisuals/ai-voice` (**Voice**): A realtime voice assistant orb that cycles through listening, thinking, and speaking states, with pulsing rings, a live equalizer, a status pill, and a transcript, over an ambient glow and particle field. Details: `visuals/ai/voice.md`.
 
 ### API
