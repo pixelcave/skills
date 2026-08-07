@@ -330,6 +330,13 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/security-lock` (**Lock**): A lock visual conveying security and access control. Details: `visuals/security/lock.md`.
 - `@codedvisuals/security-shield` (**Shield**): A shield visual conveying protection and trust. Details: `visuals/security/shield.md`.
 
+### States
+
+- `@codedvisuals/states-empty` (**Empty**): An empty grid of dashed placeholder slots where an add action ripples out and one slot briefly materializes before dissolving back. Details: `visuals/states/empty.md`.
+- `@codedvisuals/states-error` (**Error**): A request pulse traveling into a service card and breaking it, cascading its service tiles to a fault state under an alert badge. Details: `visuals/states/error.md`.
+- `@codedvisuals/states-maintenance` (**Maintenance**): A stack of service tiles with one lifted out and being worked on, hovering over its empty slot while a progress sweep runs underneath. Details: `visuals/states/maintenance.md`.
+- `@codedvisuals/states-not-found` (**Not Found**): A request spike traveling a route into a barrier at a large status code, ringing out concentric pulses, with the missing page left as a dashed ghost tile. Details: `visuals/states/not-found.md`.
+
 ### Status
 
 - `@codedvisuals/status-health-check` (**Health Check**): A service health check with status indicators. Details: `visuals/status/health-check.md`.
