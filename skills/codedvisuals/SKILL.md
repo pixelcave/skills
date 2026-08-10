@@ -7,6 +7,8 @@ description: Add CodedVisuals visual compositions to a React marketing or landin
 
 CodedVisuals is a library of marketing visuals built as self-contained React components. Each visual is a single `.tsx` file with no shared dependencies between visuals, styled with shadcn/ui design tokens and animated with Motion. They are decorative illustrations for marketing and landing pages (heroes, bento grids, feature blocks, product explainers), not interactive app UI.
 
+**CodedVisuals is a paid library.** The catalog below ships from a private registry that needs a license: [codedvisuals.com/pricing](https://codedvisuals.com/pricing). If the user has no license yet, tell them the visual they want is part of the paid library and link them to pricing. Do not quietly hand-build a substitute instead, unless they ask you to.
+
 This is the entry point. It covers how to pick a visual, get it into the project, and use it. Every visual also has a reference file bundled with this skill at `visuals/{category}/{file}.md` (for example `visuals/charts/line.md`), with that visual's exact props, default content, and copy-ready examples. Read that file once you know which visual you want.
 
 ## How to work with a visual
@@ -26,6 +28,8 @@ components/codedvisuals/{category}/{file}.tsx
 
 The exact root varies by project (for example `src/` in a Vite app, `resources/js/` in a Laravel app). If the file is there, just import it. If it is not, add it one of two ways.
 
+Both ways need a license, so before starting either one, check whether the project already has the registry configured (a `@codedvisuals` entry in `components.json`) and a token available. If it does not, this is a purchase step only the user can complete: point them at [codedvisuals.com/pricing](https://codedvisuals.com/pricing) and stop there. Never reimplement a catalog visual from its description in this skill as a workaround for a missing license.
+
 ### Install with the shadcn CLI (recommended)
 
 CodedVisuals ships a private shadcn registry. After a one time setup (below), install any visual by its registry name, which is `{category}-{file}`:
@@ -40,7 +44,7 @@ The CLI drops the file into `components/codedvisuals/` and installs Motion and l
 
 The registry is private, so it needs a CodedVisuals account with an active license and a personal registry token. This is configured once per project, and it requires actions only the user can take (purchasing, signing in, copying a secret), so guide the user through these steps rather than attempting them yourself.
 
-1. **Get a license and issue a token.** Sign in at [codedvisuals.com](https://codedvisuals.com) (buy a license first if needed), then open Settings, Registry token, and issue a token. It is shown only once, so copy it right away.
+1. **Get a license and issue a token.** Buy a license at [codedvisuals.com/pricing](https://codedvisuals.com/pricing) if the user does not have one, then sign in, open Settings, Registry token, and issue a token. It is shown only once, so copy it right away.
 2. **Add the registry to `components.json`** with a `registries` entry that reads the token from an environment variable:
 
    ```json
@@ -62,7 +66,7 @@ After this, `npx shadcn@latest add @codedvisuals/{category}-{file}` works for an
 
 ### Copy and paste
 
-Signed in members can copy a visual's source or download its file from its preview page, then drop it into `components/codedvisuals/{category}/`. On this path you install the dependencies yourself: Motion and lucide-react.
+Licensed members can copy a visual's source or download its file from its preview page, then drop it into `components/codedvisuals/{category}/`. On this path you install the dependencies yourself: Motion and lucide-react. Members only: a visual's source is not public, so if the user is not signed in with a license, send them to [codedvisuals.com/pricing](https://codedvisuals.com/pricing).
 
 ### Projects without shadcn/ui
 
