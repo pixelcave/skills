@@ -232,6 +232,9 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 ### Data
 
+- `@codedvisuals/data-filters` (**Filters**): A filter builder where each rule lands in turn and narrows a running result count and progress bar. Details: `visuals/data/filters.md`.
+- `@codedvisuals/data-import` (**Import**): A CSV import mapper where each source column connects across to its destination field, leaving unmapped columns skipped. Details: `visuals/data/import.md`.
+- `@codedvisuals/data-query` (**Query**): A visual query builder that assembles its conditions, sweeps as it runs, then streams the matching rows with a timing readout. Details: `visuals/data/query.md`.
 - `@codedvisuals/data-table` (**Table**): A data table with sortable columns, rows, and status pills. Details: `visuals/data/table.md`.
 
 ### Dashboard
@@ -261,6 +264,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 - `@codedvisuals/geo-globe` (**Globe**): A rotating globe of dotted continents with location markers and connection arcs that draw in. Details: `visuals/geo/globe.md`.
 - `@codedvisuals/geo-pin-drop` (**Pin Drop**): Location pins dropping onto an abstract radar field with concentric ripple pings. Details: `visuals/geo/pin-drop.md`.
+- `@codedvisuals/geo-world-map` (**World Map**): A dotted world map that blooms outward from a chosen city, with pinging location markers, tinted coverage regions, and connection arcs that draw between cities. Details: `visuals/geo/world-map.md`.
 
 ### Git
 
