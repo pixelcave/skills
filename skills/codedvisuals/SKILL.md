@@ -281,6 +281,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 - `@codedvisuals/integrations-hub` (**Hub**): A central app connected to surrounding integration logos. Details: `visuals/integrations/hub.md`.
 - `@codedvisuals/integrations-logo-orbit` (**Logo Orbit**): Integration logos orbiting a central brand mark. Details: `visuals/integrations/logo-orbit.md`.
+- `@codedvisuals/integrations-logo-reel` (**Logo Reel**): A row of integration logos sliding one by one into a center spotlight, blurring out as they pass. Details: `visuals/integrations/logo-reel.md`.
 
 ### Keyboard
 
