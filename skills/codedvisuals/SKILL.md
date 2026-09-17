@@ -320,6 +320,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### Sections
 
 - `@codedvisuals/sections-auth` (**Auth**): A login section with social buttons, fields, and a sign-in button. Details: `visuals/sections/auth.md`.
+- `@codedvisuals/sections-backgrounds` (**Backgrounds**): A section preview that cycles through background styles (mesh, grid, dots, rays) with a picker to switch between them. Details: `visuals/sections/backgrounds.md`.
 - `@codedvisuals/sections-bento` (**Bento**): A bento grid section with a featured tile and mixed-size cards. Details: `visuals/sections/bento.md`.
 - `@codedvisuals/sections-blog` (**Blog**): A blog index section with article cards and metadata. Details: `visuals/sections/blog.md`.
 - `@codedvisuals/sections-blog-post` (**Blog Post**): A blog post layout with title, meta, and content. Details: `visuals/sections/blog-post.md`.
@@ -358,6 +359,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### Status
 
 - `@codedvisuals/status-health-check` (**Health Check**): A service health check with status indicators. Details: `visuals/status/health-check.md`.
+- `@codedvisuals/status-resource-monitor` (**Resource Monitor**): A live resource monitor streaming CPU and memory usage across a gridded plot, with a legend showing the current reading for each series. Details: `visuals/status/resource-monitor.md`.
 - `@codedvisuals/status-uptime-bar` (**Uptime Bar**): An uptime bar showing daily operational status. Details: `visuals/status/uptime-bar.md`.
 
 ### Tasks
