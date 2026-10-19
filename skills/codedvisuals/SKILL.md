@@ -270,6 +270,8 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 ### Geo
 
+- `@codedvisuals/geo-edge-network` (**Edge Network**): A dotted world map where a request hops to the nearest edge node, with latency chips comparing the edge to a distant origin server. Details: `visuals/geo/edge-network.md`.
+- `@codedvisuals/geo-geofence` (**Geofence**): A softly faded street map with a drawn zone, tracked devices driving its irregular roads, and a toast that pops each time one enters the zone. Details: `visuals/geo/geofence.md`.
 - `@codedvisuals/geo-globe` (**Globe**): A rotating globe of dotted continents with location markers and connection arcs that draw in. Details: `visuals/geo/globe.md`.
 - `@codedvisuals/geo-pin-drop` (**Pin Drop**): Location pins dropping onto an abstract radar field with concentric ripple pings. Details: `visuals/geo/pin-drop.md`.
 - `@codedvisuals/geo-world-map` (**World Map**): A dotted world map that blooms outward from a chosen city, with pinging location markers, tinted coverage regions, and connection arcs that draw between cities. Details: `visuals/geo/world-map.md`.
