@@ -61,8 +61,8 @@ import SearchSemantic from "@/components/codedvisuals/search/semantic";
 // default
 <SearchSemantic />
 
-// isometric
-<SearchSemantic isometric />
+// hover
+<SearchSemantic hover />
 
 // support · custom copy
 <SearchSemantic

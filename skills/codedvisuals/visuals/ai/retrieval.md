@@ -66,8 +66,8 @@ import AiRetrieval from "@/components/codedvisuals/ai/retrieval";
 // default
 <AiRetrieval />
 
-// isometric
-<AiRetrieval isometric />
+// hover
+<AiRetrieval hover />
 
 // line pulse
 <AiRetrieval pulse="line" />

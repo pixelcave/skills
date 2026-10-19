@@ -46,8 +46,8 @@ import StatesError from "@/components/codedvisuals/states/error";
 // default
 <StatesError />
 
-// isometric
-<StatesError isometric />
+// hover
+<StatesError hover />
 
 // default · no glow
 <StatesError glow={false} />

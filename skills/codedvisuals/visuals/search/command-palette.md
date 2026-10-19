@@ -97,8 +97,8 @@ import SearchCommandPalette from "@/components/codedvisuals/search/command-palet
 // default
 <SearchCommandPalette />
 
-// fadeOut
-<SearchCommandPalette fadeOut />
+// hover
+<SearchCommandPalette hover />
 
 // no caret
 <SearchCommandPalette caret={false} />

@@ -46,8 +46,8 @@ import StatesNotFound from "@/components/codedvisuals/states/not-found";
 // default
 <StatesNotFound />
 
-// isometric
-<StatesNotFound isometric />
+// hover
+<StatesNotFound hover />
 
 // default · no glow
 <StatesNotFound glow={false} />

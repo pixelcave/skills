@@ -55,8 +55,8 @@ import GitBranchGraph from "@/components/codedvisuals/git/branch-graph";
 // default
 <GitBranchGraph />
 
-// isometric
-<GitBranchGraph isometric />
+// hover
+<GitBranchGraph hover />
 
 // single branch
 <GitBranchGraph

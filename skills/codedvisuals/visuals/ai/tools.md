@@ -83,8 +83,8 @@ import AiTools from "@/components/codedvisuals/ai/tools";
 // default
 <AiTools />
 
-// fadeOut
-<AiTools fadeOut />
+// hover
+<AiTools hover />
 
 // no glow
 <AiTools glow={false} />

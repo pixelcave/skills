@@ -22,7 +22,7 @@ This uses the private registry (one time setup) and installs Motion and lucide-r
 
 ## Props
 
-Also supports the shared animation props (`animated`, `trigger`, `hover`), the presentation modifier (`gradient`), and `className`, all documented in `SKILL.md`. Every prop is optional and falls back to a sensible default.
+Also supports the shared animation props (`animated`, `trigger`, `hover`), presentation modifiers (`gradient`, `isometric`), and `className`, all documented in `SKILL.md`. Every prop is optional and falls back to a sensible default.
 
 | Prop | Type | Default |
 | --- | --- | --- |
@@ -53,8 +53,8 @@ import AiPromptBox from "@/components/codedvisuals/ai/prompt-box";
 // default
 <AiPromptBox />
 
-// default · no gradient
-<AiPromptBox gradient={false} />
+// hover
+<AiPromptBox hover />
 
 // no glow
 <AiPromptBox glow={false} />

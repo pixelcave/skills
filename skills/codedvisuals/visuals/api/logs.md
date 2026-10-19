@@ -68,8 +68,8 @@ import ApiLogs from "@/components/codedvisuals/api/logs";
 // default
 <ApiLogs />
 
-// isometric
-<ApiLogs isometric />
+// hover
+<ApiLogs hover />
 
 // custom copy
 <ApiLogs

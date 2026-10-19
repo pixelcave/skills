@@ -54,8 +54,8 @@ import ApiWebhook from "@/components/codedvisuals/api/webhook";
 // default
 <ApiWebhook />
 
-// isometric
-<ApiWebhook isometric />
+// hover
+<ApiWebhook hover />
 
 // line pulse
 <ApiWebhook pulse="line" />

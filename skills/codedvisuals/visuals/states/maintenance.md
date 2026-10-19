@@ -39,8 +39,8 @@ import StatesMaintenance from "@/components/codedvisuals/states/maintenance";
 // default
 <StatesMaintenance />
 
-// isometric
-<StatesMaintenance isometric />
+// hover
+<StatesMaintenance hover />
 
 // default · no glow
 <StatesMaintenance glow={false} />

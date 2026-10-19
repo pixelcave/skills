@@ -53,6 +53,9 @@ import AiVoice from "@/components/codedvisuals/ai/voice";
 // default · cycles states
 <AiVoice />
 
+// hover
+<AiVoice hover />
+
 // listening
 <AiVoice state="listening" />
 
@@ -61,9 +64,6 @@ import AiVoice from "@/components/codedvisuals/ai/voice";
 
 // speaking
 <AiVoice state="speaking" />
-
-// hover
-<AiVoice hover />
 
 // no glow
 <AiVoice glow={false} />

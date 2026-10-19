@@ -53,8 +53,8 @@ import ApiRequest from "@/components/codedvisuals/api/request";
 // default
 <ApiRequest />
 
-// isometric
-<ApiRequest isometric />
+// hover
+<ApiRequest hover />
 
 // delete · custom copy
 <ApiRequest

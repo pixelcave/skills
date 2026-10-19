@@ -61,8 +61,8 @@ import GitPullRequest from "@/components/codedvisuals/git/pull-request";
 // default
 <GitPullRequest />
 
-// fadeOut
-<GitPullRequest fadeOut />
+// hover
+<GitPullRequest hover />
 
 // custom copy
 <GitPullRequest

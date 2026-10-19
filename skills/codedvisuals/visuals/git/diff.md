@@ -63,8 +63,8 @@ import GitDiff from "@/components/codedvisuals/git/diff";
 // default
 <GitDiff />
 
-// fadeOut
-<GitDiff fadeOut />
+// hover
+<GitDiff hover />
 
 // custom copy
 <GitDiff

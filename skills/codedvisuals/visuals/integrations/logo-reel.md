@@ -78,11 +78,11 @@ import IntegrationsLogoReel from "@/components/codedvisuals/integrations/logo-re
 // default
 <IntegrationsLogoReel />
 
-// direction right
-<IntegrationsLogoReel direction="right" />
-
 // hover
 <IntegrationsLogoReel hover />
+
+// direction right
+<IntegrationsLogoReel direction="right" />
 
 // fast interval
 <IntegrationsLogoReel interval={1200} />

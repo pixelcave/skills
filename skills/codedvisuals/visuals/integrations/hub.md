@@ -70,8 +70,8 @@ import IntegrationsHub from "@/components/codedvisuals/integrations/hub";
 // default
 <IntegrationsHub />
 
-// isometric
-<IntegrationsHub isometric />
+// hover
+<IntegrationsHub hover />
 
 // spin
 <IntegrationsHub spin />

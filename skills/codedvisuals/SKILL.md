@@ -167,9 +167,12 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### AI
 
 - `@codedvisuals/ai-agent-flow` (**Agent Flow**): An agent pipeline of stacked isometric cubes that light up in sequence, revealing each step label as it runs. Details: `visuals/ai/agent-flow.md`.
+- `@codedvisuals/ai-model-picker` (**Model Picker**): A model switcher that cycles through AI models and streams each one's answer with its speed, latency, and cost. Details: `visuals/ai/model-picker.md`.
+- `@codedvisuals/ai-neural-net` (**Neural Net**): A layered network where pulses travel node to node and light up the winning output with its confidence. Details: `visuals/ai/neural-net.md`.
 - `@codedvisuals/ai-presence` (**Presence**): Live multiplayer cursors roaming a shared canvas, one carrying your avatar and the rest labeled AI agents, over an ambient glow and particle field. Details: `visuals/ai/presence.md`.
 - `@codedvisuals/ai-prompt-box` (**Prompt Box**): A wide prompt composer with a typing prompt, model picker, token count, and send, over an ambient glow and particle field. Details: `visuals/ai/prompt-box.md`.
 - `@codedvisuals/ai-retrieval` (**Retrieval**): A query fanning out to ranked source cards that light up as each pulse lands, then converging into a streamed answer, over an ambient glow and particle field. Details: `visuals/ai/retrieval.md`.
+- `@codedvisuals/ai-thinking` (**Thinking**): A reasoning panel that streams its thinking steps, collapses into a summary, then streams the final answer. Details: `visuals/ai/thinking.md`.
 - `@codedvisuals/ai-tools` (**Tools**): An agent working through its tool calls one at a time, each row running with a spinner then settling into a result and a duration. Details: `visuals/ai/tools.md`.
 - `@codedvisuals/ai-voice` (**Voice**): A realtime voice assistant orb that cycles through listening, thinking, and speaking states, with pulsing rings, a live equalizer, a status pill, and a transcript, over an ambient glow and particle field. Details: `visuals/ai/voice.md`.
 - `@codedvisuals/ai-writer` (**Writer**): A document where an AI rewrites a selection, autocompletes ghost text, or answers a slash command inline behind a labeled AI caret, over an ambient glow and particle field. Details: `visuals/ai/writer.md`.
