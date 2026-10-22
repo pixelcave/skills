@@ -360,6 +360,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/security-fingerprint` (**Fingerprint**): An animated fingerprint scan with a success state. Details: `visuals/security/fingerprint.md`.
 - `@codedvisuals/security-lock` (**Lock**): A lock visual conveying security and access control. Details: `visuals/security/lock.md`.
 - `@codedvisuals/security-shield` (**Shield**): A shield visual conveying protection and trust. Details: `visuals/security/shield.md`.
+- `@codedvisuals/security-two-factor` (**Two-Factor**): A one-time code typed into two input groups, with the lock turning into a check as a pulse ripples through concentric rings. Details: `visuals/security/two-factor.md`.
 
 ### States
 
