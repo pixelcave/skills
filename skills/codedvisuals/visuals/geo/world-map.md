@@ -18,7 +18,7 @@ Look for `components/codedvisuals/geo/world-map.tsx` under the project's source 
 npx shadcn@latest add @codedvisuals/geo-world-map
 ```
 
-This uses the private registry (one time setup) and installs Motion and lucide-react if needed. See `SKILL.md` for the full setup and the copy and paste path, and `manual-setup.md` for projects without shadcn/ui.
+This uses the private registry (one time setup) and installs Motion, lucide-react, and cn if needed. See `SKILL.md` for the full setup and the copy and paste path, and `manual-setup.md` for projects without shadcn/ui.
 
 ## Props
 

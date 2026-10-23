@@ -1,13 +1,13 @@
 ---
 name: codedvisuals-manual-setup
-description: Prepare a React + Tailwind CSS v4 + TypeScript project (without shadcn/ui) to use CodedVisuals visual compositions. Use when adding CodedVisuals to a project that does not already have shadcn/ui tokens, the cn() helper, or the @ import alias configured.
+description: Prepare a React + Tailwind CSS v4 + TypeScript project (without shadcn/ui) to use CodedVisuals visual compositions. Use when adding CodedVisuals to a project that does not already have shadcn/ui tokens, the cn package, or the @ import alias configured.
 ---
 
 # CodedVisuals manual setup
 
-CodedVisuals compositions are self-contained React components that expect four things from the host project: the `cn` class-merging utility, a `cn()` helper at `@/lib/utils`, the shadcn/ui design-token CSS variables, and an `@` import alias pointing at the source root. On a shadcn/ui project these already exist. On a plain React + Tailwind CSS v4 + TypeScript project, set them up with the steps below, then the user can copy any composition file and it will work unchanged.
+CodedVisuals compositions are self-contained React components that expect three things from the host project: the `cn` class-merging package, the shadcn/ui design-token CSS variables, and an `@` import alias pointing at the source root. On a shadcn/ui project these already exist. On a plain React + Tailwind CSS v4 + TypeScript project, set them up with the steps below, then the user can copy any composition file and it will work unchanged.
 
-This skill assumes the host project already uses React, Tailwind CSS v4, and TypeScript. It only adds the shadcn/ui pieces above, it does not install or configure React, Tailwind CSS v4, or TypeScript. The Step 3 token mapping uses Tailwind v4 syntax (`@theme inline`, `@custom-variant`); if the project is on Tailwind v3 or is JavaScript-only, stop and tell the user before making changes.
+This skill assumes the host project already uses React, Tailwind CSS v4, and TypeScript. It only adds the shadcn/ui pieces above, it does not install or configure React, Tailwind CSS v4, or TypeScript. The Step 2 token mapping uses Tailwind v4 syntax (`@theme inline`, `@custom-variant`); if the project is on Tailwind v3 or is JavaScript-only, stop and tell the user before making changes.
 
 Work through the steps in order. Detect what already exists before changing anything, and skip any step that is already satisfied.
 
@@ -23,17 +23,7 @@ Compositions import their icons from `lucide-react`. If the project already uses
 
 Use the project's package manager if it is not npm (`pnpm add`, `yarn add`, `bun add`).
 
-## Step 2: Create the cn() helper
-
-Compositions import `cn` from `@/lib/utils`. Create `lib/utils.ts` at the source root's `lib/` folder.
-
-```ts
-export { cn } from "cn";
-```
-
-If `lib/utils.ts` already exports a `cn()` built on `clsx` + `tailwind-merge`, leave it alone and skip this step. Compositions only import `cn` from `@/lib/utils`, so either implementation works.
-
-## Step 3: Add the shadcn/ui design tokens
+## Step 2: Add the shadcn/ui design tokens
 
 Compositions color brand surfaces with shadcn/ui semantic tokens. Add the default neutral token set to the project's global stylesheet (the file that imports Tailwind). If a `:root` / `.dark` token block already exists, leave it; the user's existing theme will be used.
 
@@ -148,9 +138,9 @@ Then map the tokens to Tailwind color utilities (Tailwind v4) so classes like `b
 }
 ```
 
-## Step 4: Configure the @ import alias
+## Step 3: Configure the @ import alias
 
-Compositions import `@/lib/utils`, and the user imports each composition as `@/components/codedvisuals/<category>/<name>`. The `@` alias must point at the project's source root (the folder containing `lib` and `components`). Set it in BOTH the TypeScript config and the bundler. Copied composition files belong under `components/codedvisuals/<category>/` at that same root, so imports like `@/components/codedvisuals/charts/bar` resolve through the same alias.
+The user imports each composition as `@/components/codedvisuals/<category>/<name>`. The `@` alias must point at the project's source root (the folder containing `components`). Set it in BOTH the TypeScript config and the bundler. Copied composition files belong under `components/codedvisuals/<category>/` at that same root, so imports like `@/components/codedvisuals/charts/bar` resolve through the same alias.
 
 `tsconfig.json` (adjust `./src` to the project's actual source root):
 
@@ -182,6 +172,6 @@ export default defineConfig({
 
 Important: point the alias at whatever the project's real source root is, not blindly `./src`. Inspect the project structure first. For example, a Laravel project maps `@/*` to `./resources/js/*`.
 
-## Step 5: Verify
+## Step 4: Verify
 
-If the user has already added visual compositions to the project in `components/codedvisuals/...` folder, render one inside a sized container, and confirm it builds with no unresolved `@/lib/utils` import and that brand colors and dark mode respond to the tokens. If the import fails, the `@` alias is wrong. If colors look off, the token variables or the `@theme` mapping are missing.
+If the user has already added visual compositions to the project in `components/codedvisuals/...` folder, render one inside a sized container, and confirm it builds with no unresolved imports and that brand colors and dark mode respond to the tokens. If the composition import fails, the `@` alias is wrong. If `cn` fails to resolve, the package is not installed. If colors look off, the token variables or the `@theme` mapping are missing.

@@ -38,7 +38,7 @@ CodedVisuals ships a private shadcn registry. After a one time setup (below), in
 npx shadcn@latest add @codedvisuals/charts-line
 ```
 
-The CLI drops the file into `components/codedvisuals/` and installs Motion and lucide-react if they are missing. Other package managers work the same way: `pnpm dlx shadcn@latest add ...`, `yarn shadcn@latest add ...`, `bunx --bun shadcn@latest add ...`.
+The CLI drops the file into `components/codedvisuals/` and installs Motion, lucide-react, and cn if they are missing. Other package managers work the same way: `pnpm dlx shadcn@latest add ...`, `yarn shadcn@latest add ...`, `bunx --bun shadcn@latest add ...`.
 
 #### Set up the private registry (one time)
 
@@ -66,11 +66,11 @@ After this, `npx shadcn@latest add @codedvisuals/{category}-{file}` works for an
 
 ### Copy and paste
 
-Licensed members can copy a visual's source or download its file from its preview page, then drop it into `components/codedvisuals/{category}/`. On this path you install the dependencies yourself: Motion and lucide-react. Members only: a visual's source is not public, so if the user is not signed in with a license, send them to [codedvisuals.com/pricing](https://codedvisuals.com/pricing).
+Licensed members can copy a visual's source or download its file from its preview page, then drop it into `components/codedvisuals/{category}/`. On this path you install the dependencies yourself: Motion, lucide-react, and cn. Members only: a visual's source is not public, so if the user is not signed in with a license, send them to [codedvisuals.com/pricing](https://codedvisuals.com/pricing).
 
 ### Projects without shadcn/ui
 
-Visuals expect four things from the host project: the `cn` class-merging utility, a `cn()` helper at `@/lib/utils`, the shadcn/ui design-token CSS variables, and an `@` import alias pointing at the source root. A shadcn/ui project already has these. For a plain React + Tailwind CSS v4 project, follow `manual-setup.md` in this skill, then copied files work unchanged.
+Visuals expect three things from the host project: the `cn` class-merging package, the shadcn/ui design-token CSS variables, and an `@` import alias pointing at the source root. A shadcn/ui project already has these. For a plain React + Tailwind CSS v4 project, follow `manual-setup.md` in this skill, then copied files work unchanged.
 
 ## Use it on a page
 
@@ -180,6 +180,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### API
 
 - `@codedvisuals/api-logs` (**Logs**): Service nodes streaming into a log console along connected paths, with severity-colored level chips and rows that tail in. Details: `visuals/api/logs.md`.
+- `@codedvisuals/api-rate-limit` (**Rate Limit**): Request cubes dropping into an isometric quota tray until it fills, where the next one bounces off with a 429 before the limit drains and resets. Details: `visuals/api/rate-limit.md`.
 - `@codedvisuals/api-request` (**Request**): A request arcing from client to server and a response arcing back, with a method pill, a status code, and a JSON response card. Details: `visuals/api/request.md`.
 - `@codedvisuals/api-webhook` (**Webhook**): A webhook event fanning retry arcs at your endpoint, where failed attempts fall short and the successful one delivers. Details: `visuals/api/webhook.md`.
 
@@ -212,6 +213,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### Charts
 
 - `@codedvisuals/charts-bar` (**Bar**): An animated bar chart with a value, trend badge, and grid. Details: `visuals/charts/bar.md`.
+- `@codedvisuals/charts-block-stack` (**Block Stack**): An isometric bar chart whose columns grow as blocks drop onto them, each landing squashing the stack with a springy bounce. Details: `visuals/charts/block-stack.md`.
 - `@codedvisuals/charts-donut` (**Donut**): An animated donut chart with a center total and legend. Details: `visuals/charts/donut.md`.
 - `@codedvisuals/charts-funnel` (**Funnel**): A conversion funnel of tapering stage slabs that pour in one by one, with per stage counts and conversion rates. Details: `visuals/charts/funnel.md`.
 - `@codedvisuals/charts-gauge` (**Gauge**): A semicircular gauge whose arc sweeps to its value, with an optional zoned track, a center reading, and range labels. Details: `visuals/charts/gauge.md`.
@@ -235,6 +237,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 - `@codedvisuals/connections-converge` (**Converge**): Multiple sources converging into a single destination node. Details: `visuals/connections/converge.md`.
 - `@codedvisuals/connections-flow` (**Flow**): An animated flow of nodes connected by data paths. Details: `visuals/connections/flow.md`.
+- `@codedvisuals/connections-layer-stack` (**Layer Stack**): Pipeline steps as isometric slabs that drop onto each other one by one, squashing the stack until the release ships and lifts away. Details: `visuals/connections/layer-stack.md`.
 - `@codedvisuals/connections-pipeline` (**Pipeline**): A linear pipeline of stages with moving progress. Details: `visuals/connections/pipeline.md`.
 - `@codedvisuals/connections-sync` (**Sync**): Two systems syncing with data moving back and forth. Details: `visuals/connections/sync.md`.
 
@@ -298,6 +301,7 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### Keyboard
 
 - `@codedvisuals/keyboard-half` (**Half**): A half keyboard showing a key combination press. Details: `visuals/keyboard/half.md`.
+- `@codedvisuals/keyboard-isometric-keys` (**Isometric Keys**): An isometric keyboard that types shortcuts on tactile keycaps that press down and spring back, with a pill naming each command. Details: `visuals/keyboard/isometric-keys.md`.
 - `@codedvisuals/keyboard-shortcut` (**Shortcut**): A keyboard shortcut rendered as labeled keycaps. Details: `visuals/keyboard/shortcut.md`.
 
 ### Media
@@ -379,5 +383,6 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 
 - `@codedvisuals/tasks-checklist` (**Checklist**): A checklist with items completing one by one. Details: `visuals/tasks/checklist.md`.
 - `@codedvisuals/tasks-kanban` (**Kanban**): A kanban board with columns and draggable cards. Details: `visuals/tasks/kanban.md`.
+- `@codedvisuals/tasks-sort-lanes` (**Sort Lanes**): Task cubes gliding across isometric To do, In progress, and Done lanes, each landing with a springy press while lane counts tick over. Details: `visuals/tasks/sort-lanes.md`.
 
 <!-- CATALOG:END -->

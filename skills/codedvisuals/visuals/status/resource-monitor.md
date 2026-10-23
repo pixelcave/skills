@@ -18,7 +18,7 @@ Look for `components/codedvisuals/status/resource-monitor.tsx` under the project
 npx shadcn@latest add @codedvisuals/status-resource-monitor
 ```
 
-This uses the private registry (one time setup) and installs Motion and lucide-react if needed. See `SKILL.md` for the full setup and the copy and paste path, and `manual-setup.md` for projects without shadcn/ui.
+This uses the private registry (one time setup) and installs Motion, lucide-react, and cn if needed. See `SKILL.md` for the full setup and the copy and paste path, and `manual-setup.md` for projects without shadcn/ui.
 
 ## Props
 
