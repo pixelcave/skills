@@ -113,6 +113,26 @@ The default import name is the consumer's choice; `{Category}{File}` in PascalCa
 
 If the host project already has its own grid, card, or feature-section layouts, drop the visual into those. If it does not, open `layout-patterns.md` in this skill for ready-to-paste containers, feature cards, bento grids, and split rows. Note that without an existing layout it's a good approach to give the container an explicit height or minimum height to give vertical room for the visual to breathe.
 
+## Hero scenes
+
+The `hero/*` category is built for the first section of a landing page: wide, detailed scenes (for example `hero/software-factory`) rather than card-sized illustrations. They are responsive on their own. Each one measures its container, scales to fit, and changes its layout with the available width: a vertical flow on phones, a horizontal flow on tablets and laptops, and extra detail on wide screens. So:
+
+- Give the scene the full content width and an explicit height that grows with the breakpoint, for example `h-104 sm:h-120 lg:h-136` inside a `max-w-6xl` wrapper. It needs no frame card and no `wrapperClassName`.
+- Place it below the headline and calls to action, not behind them.
+- Use `trigger="mount"`, since it sits above the fold.
+- Modifier support varies per scene, like any visual. Check the scene's reference file for which of `isometric`, `fadeOut`, and `gradient` it accepts, and for its scene-specific props.
+
+```tsx
+<section className="py-24">
+  <div className="mx-auto max-w-3xl text-center">
+    {/* headline, copy, and calls to action */}
+  </div>
+  <div className="mx-auto mt-12 h-104 w-full max-w-6xl sm:h-120 lg:h-136">
+    <HeroSoftwareFactory animated trigger="mount" />
+  </div>
+</section>
+```
+
 ## Animation
 
 Animation is opt-in through three props:
@@ -133,7 +153,7 @@ Omit `animated` entirely for a completely still illustration.
 
 ## Presentation modifiers
 
-Most visuals accept marketing-ready modifiers. They are optional:
+Most visuals accept marketing-ready modifiers, and each visual's reference file lists the ones it supports. They are optional:
 
 - `gradient` (default `true` when supported): a soft brand glow behind the visual.
 - `fadeOut` (default `false`): fade the bottom edge into the background.
@@ -284,6 +304,14 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/git-branch-graph` (**Branch Graph**): A commit rail where feature branches fork off, run their own commits, and merge back, with pulses traveling every path. Details: `visuals/git/branch-graph.md`.
 - `@codedvisuals/git-diff` (**Diff**): A file diff with added and removed lines, in unified or side by side view, swept line by line as the change counters climb. Details: `visuals/git/diff.md`.
 - `@codedvisuals/git-pull-request` (**Pull Request**): A pull request card whose CI checks run one by one, then settle into an approval and a merge button that lights up. Details: `visuals/git/pull-request.md`.
+
+### Hero
+
+- `@codedvisuals/hero-agent-hub` (**Agent Hub**): A wide isometric hero scene where an AI agent core calls a ring of tool blocks in turn, sending pulses out and back as each one works. Details: `visuals/hero/agent-hub.md`.
+- `@codedvisuals/hero-platform-stack` (**Platform Stack**): A tall isometric hero scene of exploded platform layers carrying icon and logo tiles, where a build pulse climbs the posts from layer to layer. Details: `visuals/hero/platform-stack.md`.
+- `@codedvisuals/hero-security-gateway` (**Security Gateway**): A wide isometric hero scene where request lanes run into a firewall wall, clean traffic passing through open gates to your app while blocked lanes stop at red gates. Details: `visuals/hero/security-gateway.md`.
+- `@codedvisuals/hero-software-factory` (**Software Factory**): A wide isometric hero scene where asset blocks feed a processor along circuit traces that merge into one shipped product. Details: `visuals/hero/software-factory.md`.
+- `@codedvisuals/hero-workflow-automation` (**Workflow Automation**): A wide flat workflow canvas where a trigger card runs through step cards into a condition that alternates between its two branch actions. Details: `visuals/hero/workflow-automation.md`.
 
 ### Images
 

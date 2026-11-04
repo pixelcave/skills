@@ -478,7 +478,15 @@ Equal cards in a responsive grid: one column on mobile, two from `sm`, three fro
 
 ## Hero single visual
 
-One large framed visual, padded and centered, for the top of a page.
+For the top of a page, reach for the `hero/*` category first. Those scenes are built for this spot: they fill the full content width, scale to fit their container, and switch to a vertical layout on phones, so they need no frame and no width override. Give them a height that grows with the breakpoint:
+
+```tsx
+<div className="mx-auto mt-12 h-104 w-full max-w-6xl sm:h-120 lg:h-136">
+  <HeroSoftwareFactory animated trigger="mount" />
+</div>
+```
+
+To feature a regular visual in a hero instead, frame it: one large visual, padded and centered.
 
 ```tsx
 <div className="mx-auto mt-14 max-w-6xl">
@@ -506,7 +514,7 @@ One large framed visual, padded and centered, for the top of a page.
 
 The outer `p-1.5` ring gives the "framed screenshot" look. `aspect-video` keeps the visual a clean 16:9 as the container width changes.
 
-Most visuals cap their own wrapper with a `max-w-*` so they stay sensibly sized inside normal cards, which means not every visual is ideal for a wide hero out of the box. The library is growing, and some already expose a `wrapperClassName` prop to override that cap. `geo/globe` and `geo/pin-drop`, for example, accept `wrapperClassName="max-w-full"` to drop the max width and stretch into a hero or other large container (as in the example above). Check a visual's reference file or its `.tsx` for a `wrapperClassName` prop before relying on it.
+Outside the `hero/*` category, most visuals cap their own wrapper with a `max-w-*` so they stay sensibly sized inside normal cards, which means not every visual is ideal for a wide hero out of the box. The library is growing, and some already expose a `wrapperClassName` prop to override that cap. `geo/globe` and `geo/pin-drop`, for example, accept `wrapperClassName="max-w-full"` to drop the max width and stretch into a hero or other large container (as in the example above). Check a visual's reference file or its `.tsx` for a `wrapperClassName` prop before relying on it.
 
 ## Customization notes
 

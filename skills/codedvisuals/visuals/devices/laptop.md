@@ -26,12 +26,7 @@ Also supports the shared animation props (`animated`, `trigger`) and `className`
 
 | Prop | Type | Default |
 | --- | --- | --- |
-| `variant` | `\| "landing"
-    \| "dashboard"
-    \| "windows"
-    \| "mac"
-    \| "lockscreen"
-    \| "screenshot"` | `"landing"` |
+| `variant` | `"landing" \| "dashboard" \| "windows" \| "mac" \| "lockscreen" \| "screenshot"` | `"landing"` |
 | `image` | `string` | - |
 | `time` | `string` | `"9:41"` |
 | `date` | `string` | `"Monday, May 25"` |
