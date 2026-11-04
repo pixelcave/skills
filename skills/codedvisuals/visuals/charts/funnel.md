@@ -103,22 +103,10 @@ import ChartsFunnel from "@/components/codedvisuals/charts/funnel";
   value="$412k"
   change="+11.9%"
   stages={[
-    {
-      label: "Leads",
-      value: 1840,
-      color: "var(--color-chart-2)",
-    },
-    {
-      label: "Qualified",
-      value: 780,
-      color: "var(--color-chart-2)",
-    },
-    { label: "Demo", value: 310, color: "var(--color-chart-3)" },
-    {
-      label: "Closed",
-      value: 96,
-      color: "var(--color-primary)",
-    },
+    { label: "Leads", value: 1840, color: "var(--chart-2)" },
+    { label: "Qualified", value: 780, color: "var(--chart-2)" },
+    { label: "Demo", value: 310, color: "var(--chart-3)" },
+    { label: "Closed", value: 96, color: "var(--primary)" },
   ]}
 />
 

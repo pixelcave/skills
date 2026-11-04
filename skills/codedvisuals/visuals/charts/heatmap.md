@@ -32,7 +32,7 @@ Also supports the shared animation props (`animated`, `trigger`), presentation m
 | `change` | `string` | `"+9.2%"` |
 | `rows` | `HeatmapRow[]` | see Default content below |
 | `columns` | `string[]` | see Default content below |
-| `color` | `string` | `"var(--color-primary)"` |
+| `color` | `string` | `"var(--primary)"` |
 | `legend` | `boolean` | `true` |
 | `legendLow` | `string` | `"Less"` |
 | `legendHigh` | `string` | `"More"` |
@@ -154,7 +154,7 @@ import ChartsHeatmap from "@/components/codedvisuals/charts/heatmap";
   badge="1y"
   value="3,208"
   change="-12.4%"
-  color="var(--color-chart-2)"
+  color="var(--chart-2)"
   legend={false}
   columns={["Jan", "", "Mar", "", "May", "", "Jul", "", "Sep", "", "Nov", ""]}
   rows={[
@@ -188,7 +188,7 @@ import ChartsHeatmap from "@/components/codedvisuals/charts/heatmap";
   badge="30d"
   value="78%"
   change="+6.7%"
-  color="var(--color-chart-2)"
+  color="var(--chart-2)"
   columns={["W1", "W2", "W3", "W4", "W5", "W6"]}
   rows={[
     { label: "Docs", values: [42, 58, 66, 74, 88, 96] },

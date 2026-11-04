@@ -58,7 +58,7 @@ const DEFAULT_SERIES: MonitorSeries[] = [
   },
   {
     label: "CPU",
-    color: "var(--color-primary)",
+    color: "var(--primary)",
     points: [0.16, 0.21, 0.19, 0.27, 0.34, 0.47, 0.6, 0.73, 0.85, 0.9],
     jitter: 0.045,
   },
@@ -90,7 +90,7 @@ import StatusResourceMonitor from "@/components/codedvisuals/status/resource-mon
     },
     {
       label: "NET",
-      color: "var(--color-primary)",
+      color: "var(--primary)",
       points: [0.62, 0.55, 0.68, 0.6, 0.72, 0.64, 0.7, 0.66],
       jitter: 0.07,
     },
@@ -104,7 +104,7 @@ import StatusResourceMonitor from "@/components/codedvisuals/status/resource-mon
   series={[
     {
       label: "JOBS",
-      color: "var(--color-primary)",
+      color: "var(--primary)",
       points: [0.2, 0.35, 0.28, 0.5, 0.44, 0.66, 0.58, 0.78],
       jitter: 0.06,
     },

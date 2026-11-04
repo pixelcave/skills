@@ -34,7 +34,7 @@ Also supports the shared animation props (`animated`, `trigger`), presentation m
 | `change` | `string` | `"+4.2%"` |
 | `minLabel` | `string` | `"0"` |
 | `maxLabel` | `string` | `"100"` |
-| `color` | `string` | `"var(--color-primary)"` |
+| `color` | `string` | `"var(--primary)"` |
 | `zones` | `GaugeZone[]` | - |
 
 ## Types
@@ -101,7 +101,7 @@ import ChartsGauge from "@/components/codedvisuals/charts/gauge";
   minLabel="0"
   maxLabel="50k"
   change="+3.1%"
-  color="var(--color-chart-2)"
+  color="var(--chart-2)"
 />
 
 // score · isometric · custom copy

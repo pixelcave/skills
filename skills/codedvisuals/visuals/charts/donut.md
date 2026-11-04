@@ -48,10 +48,10 @@ The values used when you do not pass the matching prop:
 
 ```ts
 const DEFAULT_SEGMENTS: Segment[] = [
-  { label: "Documents", value: 38, color: "var(--color-chart-1)" },
-  { label: "Media", value: 26, color: "var(--color-chart-2)" },
-  { label: "Apps", value: 18, color: "var(--color-chart-3)" },
-  { label: "Free", value: 18, color: "var(--color-primary)" },
+  { label: "Documents", value: 38, color: "var(--chart-1)" },
+  { label: "Media", value: 26, color: "var(--chart-2)" },
+  { label: "Apps", value: 18, color: "var(--chart-3)" },
+  { label: "Free", value: 18, color: "var(--primary)" },
 ];
 ```
 
@@ -75,26 +75,10 @@ import ChartsDonut from "@/components/codedvisuals/charts/donut";
   centerValue="48k"
   centerLabel="visits"
   segments={[
-    {
-      label: "Organic",
-      value: 52,
-      color: "var(--color-chart-1)",
-    },
-    {
-      label: "Direct",
-      value: 24,
-      color: "var(--color-chart-2)",
-    },
-    {
-      label: "Referral",
-      value: 14,
-      color: "var(--color-chart-3)",
-    },
-    {
-      label: "Social",
-      value: 10,
-      color: "var(--color-chart-4)",
-    },
+    { label: "Organic", value: 52, color: "var(--chart-1)" },
+    { label: "Direct", value: 24, color: "var(--chart-2)" },
+    { label: "Referral", value: 14, color: "var(--chart-3)" },
+    { label: "Social", value: 10, color: "var(--chart-4)" },
   ]}
 />
 
@@ -109,10 +93,10 @@ import ChartsDonut from "@/components/codedvisuals/charts/donut";
     {
       label: "Free",
       value: 60,
-      color: "var(--color-muted-foreground)",
+      color: "var(--muted-foreground)",
     },
-    { label: "Pro", value: 28, color: "var(--color-chart-1)" },
-    { label: "Team", value: 12, color: "var(--color-chart-2)" },
+    { label: "Pro", value: 28, color: "var(--chart-1)" },
+    { label: "Team", value: 12, color: "var(--chart-2)" },
   ]}
 />
 ```
