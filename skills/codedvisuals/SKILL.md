@@ -308,7 +308,9 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 ### Hero
 
 - `@codedvisuals/hero-agent-hub` (**Agent Hub**): A wide isometric hero scene where an AI agent core calls a ring of tool blocks in turn, sending pulses out and back as each one works. Details: `visuals/hero/agent-hub.md`.
+- `@codedvisuals/hero-browser-agent` (**Browser Agent**): A wide isometric hero scene where an agent core gathers context, clicks through a stack of floating browser windows, then waits on an approval card until a human switches it on. Details: `visuals/hero/browser-agent.md`.
 - `@codedvisuals/hero-platform-stack` (**Platform Stack**): A tall isometric hero scene of exploded platform layers carrying icon and logo tiles, where a build pulse climbs the posts from layer to layer. Details: `visuals/hero/platform-stack.md`.
+- `@codedvisuals/hero-scaling-core` (**Scaling Core**): A wide flat hero scene where line pulses ride fanned lanes into a chip-like compute core and back out, while a status badge below it flips from scaling up to scaled. Details: `visuals/hero/scaling-core.md`.
 - `@codedvisuals/hero-security-gateway` (**Security Gateway**): A wide isometric hero scene where request lanes run into a firewall wall, clean traffic passing through open gates to your app while blocked lanes stop at red gates. Details: `visuals/hero/security-gateway.md`.
 - `@codedvisuals/hero-software-factory` (**Software Factory**): A wide isometric hero scene where asset blocks feed a processor along circuit traces that merge into one shipped product. Details: `visuals/hero/software-factory.md`.
 - `@codedvisuals/hero-workflow-automation` (**Workflow Automation**): A wide flat workflow canvas where a trigger card runs through step cards into a condition that alternates between its two branch actions. Details: `visuals/hero/workflow-automation.md`.
@@ -378,10 +380,12 @@ Pick by category. Each entry is `registry-name` (**Name**): description, plus th
 - `@codedvisuals/sections-footers` (**Footers**): A marketing footer with brand, links, and socials. Details: `visuals/sections/footers.md`.
 - `@codedvisuals/sections-headers` (**Headers**): A marketing header with navigation and actions. Details: `visuals/sections/headers.md`.
 - `@codedvisuals/sections-hero` (**Hero**): A marketing hero section with heading, copy, and buttons. Details: `visuals/sections/hero.md`.
+- `@codedvisuals/sections-location` (**Location**): A location section with a street map, a location pin, and an address row. Details: `visuals/sections/location.md`.
 - `@codedvisuals/sections-logos` (**Logos**): A logo cloud of customer or partner brands. Details: `visuals/sections/logos.md`.
 - `@codedvisuals/sections-newsletter` (**Newsletter**): A newsletter signup section with an email input. Details: `visuals/sections/newsletter.md`.
 - `@codedvisuals/sections-pricing` (**Pricing**): A pricing section with plan cards and features. Details: `visuals/sections/pricing.md`.
 - `@codedvisuals/sections-process` (**Process**): A step by step process section with numbered stages. Details: `visuals/sections/process.md`.
+- `@codedvisuals/sections-prose` (**Prose**): A long-form prose section with a heading, a blockquote, and body text. Details: `visuals/sections/prose.md`.
 - `@codedvisuals/sections-stats` (**Stats**): A stats section highlighting key numbers. Details: `visuals/sections/stats.md`.
 - `@codedvisuals/sections-team` (**Team**): A team section with member cards and roles. Details: `visuals/sections/team.md`.
 - `@codedvisuals/sections-testimonials` (**Testimonials**): A testimonials section with quotes and authors. Details: `visuals/sections/testimonials.md`.
